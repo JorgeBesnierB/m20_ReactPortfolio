@@ -33,7 +33,7 @@ ul{
 }
 
 .btn:hover{
-  background: grey;
-  color: #fff;
+  background: yellow;
+  color: black;
   transition: 0.3s;
 }
