@@ -1,25 +1,19 @@
 import "./WorkCardStyles.css"
 
 import React from 'react'
-import prod1 from "../assets/p1.webp"
-import {NavLink} from "react-router-dom";
 
-const WorkCard = () => {
+
+
+const WorkCard = (props) => {
   return (
-    <div className="work-container">
-        <h1 className="project-heading">Projects</h1>
-        <div className="project-container">
-            <div className="project-card">
-                <img src={prod1} alt="image"/>
-                <h2 className="project-title">title</h2>
-                <div className="pro-details">
-                    <p> text</p>
-                    <div className="pro-btns">
-                        <NavLink to = " " className="btn"> text</NavLink>
-                    </div>
-                </div>
+    <div className="project-card">
+        <img src={props.imgsrc} height={550} width={640} alt="dynamic"/>
+        <h2 className="project-title">{props.title}</h2>
+        <div className="pro-details">
+            <p>{props.text}</p>
+            <div className="pro-btns">
+                <a href = {props.view}  target="_blank" className="btn">Github</a>
             </div>
-
         </div>
     </div>
   )

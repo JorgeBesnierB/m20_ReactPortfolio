@@ -32,7 +32,10 @@
     padding: 0.5rem 1rem;
 }
 
-
+.img {
+    height: 10px;
+    width: 10px; 
+}
 
 @media screen and (max-width: 740px) {
     .project-container{
